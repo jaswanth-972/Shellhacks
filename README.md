@@ -1,0 +1,2 @@
+# Shellhacks
+Our first hackathon
