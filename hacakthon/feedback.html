@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <title> Forms </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <style>
+        form {
+            margin: 0 auto;
+            width: 600px;
+        }
+
+        body {
+            background-image: url(https://i.ytimg.com/vi/yYXsprQeelI/maxresdefault.jpg);
+            color: white;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Globetrotting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tourist Places
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://wikitravel.org/en/Agra">Agra</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Tourism_in_Kerala">Kerala</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/List_of_tourist_attractions_in_Hyderabad">Hyderabad</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh">Manali</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Mumbai">Mumbai</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/List_of_tourist_attractions_in_Delhi">Delhi</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Tourism_in_Goa">Goa</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/List_of_tourist_attractions_in_Chennai">Chennai</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/List_of_tourist_attractions_in_Bangalore">Banglore</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Tourism_in_Jammu_and_Kashmir">Kashmir</a></li>
+
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback Form</a>
+                    </li>
+
+                </ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 align=center>Feedback form</h2>
+        <div class="a">
+            
+            <form name="RegForm" action="https://formspree.io/f/xyyloqpo" onsubmit="return REGISTRATION (FORM)" method="post">
+                <div text>
+                    <p>Enter your Name: <input type="text" size="65" name="Name" /></p>
+                    <br />
+                    <p>Address: <input type="text" size="65" name="Address" />
+                    </p>
+                    <p>Telephone: <input type="text" size="65" name="Telephone" /></p>
+                    <br />
+
+                    <p>E-mail Address: <input type="text" size="65" name="EMail" /></p>
+                    <br />
+                    
+
+                    <h5>Things you like?</h5>
+                    <input type="radio" name="GFG" id="GFG" value="Pictures">Pictures<br>
+
+                    <input type="radio" name="GFG" id="ContentL" value="">Content<br>
+
+                    <input type="radio" name="GFG" id="JS" value="Design">Design
+                    <br><br>
+                    <input type="button" id="btn" value="Do you like our Webpage ?">
+                    <input type="radio" name="choice" value="yes"> Yes
+                    <input type="radio" name="choice" value="no"> No
+                    <br>
+                                     
+                    
+                    <br />
+                    <p>Things to improve: <textarea cols="55" name="Comment"> </textarea></p>
+                    <p>
+                        <input type="submit" value="Submit" name="Submit" />
+                        <input type="reset" value="Reset" name="Reset" />
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2021–2022 SYF</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+</body>
+<script>
+    function REGISTRATION(FORM) {
+        var name =
+            document.forms["RegForm"]["Name"];
+        var email =
+            document.forms["RegForm"]["EMail"];
+        var phone =
+            document.forms["RegForm"]["Telephone"];
+        var what =
+            document.forms["RegForm"]["Subject"];
+        var password =
+            document.forms["RegForm"]["Password"];
+        var address =
+            document.forms["RegForm"]["Address"];
+
+        if (name.value == "") {
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+        }
+
+        if (address.value == "") {
+            window.alert("Please enter your address.");
+            address.focus();
+            return false;
+        }
+
+        if (email.value == "") {
+            window.alert(
+                "Please enter a valid e-mail address.");
+            email.focus();
+            return false;
+        }
+
+        if (phone.value == "") {
+            window.alert(
+                "Please enter your telephone number.");
+            phone.focus();
+            return false;
+        }
+
+        
+
+        if (what.selectedIndex < 1) {
+            alert("Please enter your course.");
+            what.focus();
+            return false;
+        }
+
+        return true;
+        const btn = document.querySelector('#btn');
+        // handle click button
+        btn.onclick = function () {
+            const rbs = document.querySelectorAll('input[name="choice"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            alert(selectedValue);
+        };
+        function display() {
+            if (document.getElementById('GFG').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("GFG").value
+                    + " radio button checked";
+            }
+            else if (document.getElementById('HTML').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("HTML").value
+                    + " radio button checked";
+            }
+            else if (document.getElementById('JS').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("JS").value
+                    + " radio button checked";
+            }
+            else {
+                document.getElementById("disp").innerHTML
+                    = "No one selected";
+            }
+        }
+    }
+</script>
+</html>
